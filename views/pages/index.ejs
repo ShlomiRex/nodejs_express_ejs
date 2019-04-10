@@ -23,10 +23,21 @@
 <h2>Loop</h2>
 
 <ul>
-    <% drinks.forEach(function(drink) { %>
-        <li><%= drink.name %> - <%= drink.drunkness %></li>
-    <% }); %>
+
 </ul>
+
+<table border="1">
+    <% drinks.forEach(function(drink) { %>
+        <tr>
+            <td>
+                <%= drink.drunkness %>
+            </td>
+            <td>
+                <%= drink.name %>  
+            </td>
+        </tr>
+    <% }); %>
+</table>
 </main>
 
 <footer>
